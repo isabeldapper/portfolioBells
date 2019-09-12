@@ -155,6 +155,35 @@ footer .menu a {
         justify-content: space-between;
     }
 
+    .menu .close-menu {
+        display: block;
+        text-align: right;
+        background-color: #eee;
+        }
+
+    .menu .close-menu button{
+        background: none;
+        border: none;
+        font-size: 2em;
+        padding: .75rem 1rem;
+    }
+
+    .menu.open .backdrop{
+        opacity: .5;
+    }
+
+    .menu .backdrop{
+        opacity: 0;
+        background-color: #000;
+        transition: opacity .15 linear;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+        left: 0;
+        top: 0;
+    }
+
     .menu ul {
         display: block;
         position: fixed;
@@ -163,7 +192,7 @@ footer .menu a {
         width: 80vw;
         height: 100vw;
         background-color: #fff;
-        z-index: 1;
+        z-index: 2;
         margin: 0;
         transition: rigth .2s linear;
     }
