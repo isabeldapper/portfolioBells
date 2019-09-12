@@ -161,18 +161,27 @@ footer .menu a {
         background-color: #eee;
         }
 
-    .menu .close-menu button{
+    .menu .close-menu button {
         background: none;
         border: none;
         font-size: 2em;
         padding: .75rem 1rem;
     }
 
-    .menu.open .backdrop{
-        opacity: .5;
+    .close-menu {
+        display: none;
     }
 
-    .menu .backdrop{
+    .menu.open .backdrop {
+        opacity: .5;
+        display: block;
+    }
+
+    .backdrop {
+        display: none;
+    }
+
+    .menu .backdrop {
         opacity: 0;
         background-color: #000;
         transition: opacity .15 linear;
